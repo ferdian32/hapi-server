@@ -1,14 +1,15 @@
 const Hapi = require("@hapi/hapi");
-
+const routes = require("./routesrr");
 class Server {
   init = async () => {
-    const server = Hapi.server({
+    const _ax012 = Hapi.server({
       port: 5000,
       host: "localhost",
     });
-    await server.start();
-    console.log(`Server Berjalan pada ${server.info.uri}`);
+    _ax012.route(routes);
+    await _ax012.start();
+    console.log(`_ax012 Berjalan pada ${_ax012.info.uri}`);
   };
 }
-const server = new Server();
-server.init();
+const b1_02a = new Server();
+b1_02a.init();
