@@ -1,5 +1,7 @@
 const Hapi = require("@hapi/hapi");
 const routes = require("./routesrr");
+const number = 30;
+console.log(number);
 class Server {
   init = async () => {
     const _ax012 = Hapi.server({
