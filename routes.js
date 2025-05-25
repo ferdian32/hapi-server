@@ -54,6 +54,14 @@ const routes = [
       return `Hello ${name} from ${location}`;
     },
   },
+  {
+    method: "GET",
+    path: "/login",
+    handler: (request, h) => {
+      const { username, password } = request.payload;
+      return `Welcome ${username} ${password}`;
+    },
+  },
 ];
 
 module.exports = routes;
