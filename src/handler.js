@@ -40,4 +40,4 @@ const addNotes = (request,h) => {
 
 }
 
-module.exports = {getAllNotes}
+module.exports = {getAllNotes,addNotes}
