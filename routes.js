@@ -58,8 +58,6 @@ const routes = [
     method: "GET",
     path: "/login",
     handler: (request, h) => {
-      // const { username, password } = request.payload;
-      // return `Welcome ${username} ${password}`;
       return h
         .response("success")
         .type("text/plain")
